@@ -1,0 +1,14 @@
+<body>
+
+<% flash.each do |type, msg| %>
+  <div id="notice">
+    <%= msg %>
+  </div>
+<% end %>
+
+<p class="show"><strong>Title:</strong> <%= @list.title %></p>
+
+<p class="show"><strong>Body:</strong> <%= @list.body %></p>
+
+<p><%= link_to 'Edit', edit_book_path(@list.id) %> | <%= link_to 'Back', '/books' %></p>
+</body>

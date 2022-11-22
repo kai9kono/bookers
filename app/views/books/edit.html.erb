@@ -1,0 +1,23 @@
+<h1>Editing Book</h1>
+
+<% if @list.errors.any? %>
+    <div class="error-box">
+      <h2><%= @list.errors.count %> errors were detected:</h2>
+        <ul>
+          <% @list.errors.full_messages.each do |message| %>
+            <li class="error-message"><%= message %></li>
+          <% end %>
+        </ul>
+    </div>
+<% end %>
+
+<%= form_with model: @list, url: update_book_path(@list.id), method: :patch do |f| %>
+
+  <p>Title</p>
+  <div class="title_field" id="edit_page"><%= f.text_field :title, value: @list.title %></div>
+
+  <p>Body</p>
+  <div class="body_field" id="edit_page"><%= f.text_area :body, value: @list.body %></div>
+  <div class="button" id="edit_page"><%= f.submit 'Update Book' %></div>
+  <% end %>
+  <p><%= link_to 'Show', book_path(@list.id) %> | <%= link_to 'Back', '/books' %></p>

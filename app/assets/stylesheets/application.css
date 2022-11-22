@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #333;
+}
+
+.top-page,.start {
+  margin: 33px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: #666;
+}
+
+td {
+  padding: 1px 5px 7px;
+  line-height: 18px;
+}
+
+.list_title {
+  width: 188.75px;
+}
+
+.list_body {
+  width: 395.98px;
+}
+
+.button input {
+  padding: 1px 6px;
+}
+
+.title_field input {
+  padding: 1px 2px;
+}
+
+.body_field textarea {
+  padding: 2px;
+}
+
+th {
+  font-weight: bold;
+  padding: 1px 1px 5px 1px;
+}
+
+h1 {
+  margin-bottom: 17px;
+}
+
+h2 {
+  margin: 16px 0;
+}
+
+.show {
+  margin: 33px;
+}
+
+#edit_page {
+  margin: 0px 0px 10px;
+}
+
+#notice {
+  color: green;
+  margin: 33px;
+}
+
+.error-box {
+  padding: 7px 7px 0;
+  margin: 0 0 20px;
+  width: 450px;
+  border: 2px solid red;
+  background-color: #f0f0f0;
+}
+
+.error-box h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error-box ul {
+  margin: 33px;
+  padding: 0 0 0 40px;
+}
